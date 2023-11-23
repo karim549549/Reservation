@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Cairo+Play:wght@300&family=Marhey&family=Vina+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="enter ">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+            </nav>
+            <div class="d-flex align-items-center ">
+              <h1 class="text-white">ocean Eyes </h1>
+              
+            </div>
+        </div>
+    </div>
+    <div class="landing d-flex align-items-baseline">
+        <div class="container">
+            <div class="row">
+                <button class="activebtn justify-content-center align-items-center d-flex  col-lg-3 col-md-4 col-4 col-sm-6">flights</button>
+                <button class="justify-content-center align-items-center  d-flex  col-lg-3 col-md-4 col-4 col-sm-6">Rents</button>
+                <button class="justify-content-center align-items-center  d-flex col-lg-3 col-md-4 col-4 col-sm-6">manage reservartions</button>
+                <button class="justify-content-center align-items-center  d-flex  col-lg-3 col-md-4 col-4 col-sm-6">flight state</button>
+            </div>
+            <div>
+                <form action="" class="row pt-3 pb-2 ps-0">
+                    <div class=" d-flex flex-column col-lg-3 col-md-6 col-sm-12  align-items-start" >
+                        <label for="">From</label>
+                        <div class="d-flex justify-content-center align-items-center input pr-5">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <input type="location" class="p-2" placeholder="Cairo.." required="true">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-start">
+                        <label for="">Distination</label>
+                        <div class="d-flex justify-content-center align-items-center input  pr-5">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <input type="location" class="p-2" placeholder="ex: Egypts" required="true">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-end ">
+                      <label for="">Depart Date</label> 
+                      <input type="date" class="p-2" required="true">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-end ">
+                      <label for="">Return Data</label> 
+                      <input type="date" class="p-2" required="true">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-start">
+                      <label for="">Passanger</label>
+                      <div class="d-flex justify-content-center align-items-center input  pr-5">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="number" class="p-2" placeholder="ex: Egypts" required="true">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-start">
+                      <label for="">Passanger</label>
+                      <div class="d-flex justify-content-center align-items-center input  pr-5">
+                      <select>
+                        <optgroup >
+                          <option value="" selected>economy </option>
+                          <option value="">premium economy </option>
+                          <option value="">bussniess </option>
+                          <option value="">first </option>
+                        </optgroup>
+                      </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-end p-1">
+                        <input type="submit" class="bg-danger text-white border-0 pl-4 pr-4 pt-2 pb-2">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="offers p-5 mt-5 mb-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card limited">      
+              <div class="card-body">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/293366528.jpg?k=9df66beb5a2d1ae011c2b465b3500df8a900cb3ec30538cb96dd8247ba6da0f1&o=&hp=1" alt="">
+                <ul class="list-group">
+                  <li class="list-group-item">Hotel : helton</li>
+                  <li class="list-group-item">flight class :economy</li>
+                  <li class="list-group-item">
+                    <div>
+                      duration : 1 week
+                    </div>
+                </li>
+                <div class="d-flex justify-content-between align-items-center p-4 ">
+                  <h6>all for <span>250$</span>
+                  </h6>
+                  <a class="detalis btn-primary pl-3 pr-3 pt-2 pb-2 text-white ">details</a>
+                </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/293366528.jpg?k=9df66beb5a2d1ae011c2b465b3500df8a900cb3ec30538cb96dd8247ba6da0f1&o=&hp=1" alt="">
+                <ul class="list-group">
+                  <li class="list-group-item">Hotel : helton</li>
+                  <li class="list-group-item">flight class :economy</li>
+                  <li class="list-group-item">
+                    <div>
+                      duration : 1 week
+                    </div>
+                </li>
+                <div class="d-flex justify-content-between align-items-center p-4 ">
+                  <h6>all for <span>250$</span>
+                  </h6>
+                  <a class="detalis btn-primary pl-3 pr-3 pt-2 pb-2 text-white ">details</a>
+                </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card limited">
+              <div class="card-body">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/293366528.jpg?k=9df66beb5a2d1ae011c2b465b3500df8a900cb3ec30538cb96dd8247ba6da0f1&o=&hp=1" alt="">
+                <ul class="list-group">
+                  <li class="list-group-item">Hotel : helton</li>
+                  <li class="list-group-item">flight class :economy</li>
+                  <li class="list-group-item">
+                    <div>
+                      duration : 1 week
+                    </div>
+                </li>
+                <div class="d-flex justify-content-between align-items-center p-4 ">
+                  <h6>all for <span>250$</span>
+                  </h6>
+                  <a class="detalis btn-primary pl-3 pr-3 pt-2 pb-2 text-white ">details</a>
+                </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/293366528.jpg?k=9df66beb5a2d1ae011c2b465b3500df8a900cb3ec30538cb96dd8247ba6da0f1&o=&hp=1" alt="">
+                <ul class="list-group">
+                  <li class="list-group-item">Hotel : helton</li>
+                  <li class="list-group-item">flight class :economy</li>
+                  <li class="list-group-item">
+                    <div>
+                      duration : 1 week
+                    </div>
+                </li>
+                <div class="d-flex justify-content-between align-items-center p-4 ">
+                  <h6>all for <span>250$</span>
+                  </h6>
+                  <a class="detalis btn-primary pl-3 pr-3 pt-2 pb-2 text-white ">details</a>
+                </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider mt-5 mb-5 position-relative ">
+      <button class="arrow" id="left"><i class="fa-solid fa-angles-left "></i></button>
+      <button class="arrow" id="right"> <i class="fa-solid fa-angles-right "></i></button>
+      <div class="slide position-absolute flex justify-content-center align-items-center flex-column p-4 start">    
+        <div  class="content text-center p-4">
+          
+          <i class="fa-solid fa-chart-simple"></i>
+          <span>100</span>
+          <h3>heltons arround the world</h3>
+          <a href="">Learn More1</a>
+        </div>
+      </div>
+      <div class="slide position-absolute flex justify-content-center align-items-center flex-column p-4 main">    
+        <div  class="content text-center p-4">
+          
+          <i class="fa-solid fa-chart-simple"></i>
+          <span>100</span>
+          <h3>heltons arround the world</h3>
+          <a href="">Learn More2</a>
+        </div>
+      </div>
+      <div class="slide position-absolute flex justify-content-center align-items-center flex-column p-4 end">    
+        <div  class="content text-center p-4">
+          
+          <i class="fa-solid fa-chart-simple"></i>
+          <span>100</span>
+          <h3>heltons arround the world</h3>
+          <a href="">Learn More</a>
+          <span>3</span>
+        </div>
+      </div>
+    </div>
+    <script  src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8741f503b5.js" crossorigin="anonymous"></script>
+    <script defer src="js/reservation.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+*{
+    transition: 0.3s;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+;
+    overflow-x: hidden;
+    background-color: #eff3f4;
+}
+.enter{
+    background-image: url('airplanes.avif');
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    min-height: 50vh;
+}
+.enter h1{
+    font-size: 7rem;
+    color: white ;
+    text-shadow: -2px 2px 0 #eff3f4,
+        -1px 1px 0 #eff3f4,
+        -2px 2px 0 #eff3f4,
+        -3px 3px 0 #eff3f4,
+        -8px 8px 20px #9a9fa0,
+        -18px 18px 35px #9a9fa0,
+        -18px 18px 40px #9a9fa0,
+        -18px 18px 100px #9a9fa0;
+
+}
+
+.landing .container{
+    transform: translatey(-8rem);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    display: flex;
+    min-height: 20vh;
+    padding:0;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding: 0rem 1rem;
+}
+.landing .container  .row:nth-child(2) {
+    row-gap: 1rem;
+}
+.landing .container  .row button{
+    background-color: white;
+    outline: 0px;
+    background-color: white;
+    border: 0px;
+    outline: 0px;
+    padding: 0.5rem 4rem;
+    border: 1px solid #e7e9ea;
+}
+.landing .container .row button:nth-child(1){
+    border-radius:0.5rem 0rem 0rem 0rem ;
+}
+.landing .container .row button:nth-child(4){
+    border-radius:0rem 0.5rem 0rem 0rem ;
+}
+.activebtn{
+    background-color: #dc3545 !important;
+    color: white;
+    align-items: center;
+}
+.landing .container  .input{
+    border: 1px solid rgb(83, 83, 83);
+    padding: 0.1rem 0.5rem;
+}
+.landing .container  .input input{
+    border: 0;
+    outline: 0;
+}
+.landing .container  input:focus{
+    outline: 0;
+    border: 0;
+}
+.landing .container select{
+    border: 0;
+    padding: 0.6rem 1rem;
+    outline: 0;
+}
+.landing .container select optgroup{
+    background-color: #686a6a;
+    color: white;
+}
+.landing .container select:focus{
+    border: 0;
+    outline: 0;
+}
+/*****/
+.offers{
+    background-color: white;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    overflow: hidden;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.card img{
+    max-width: 100%;
+}
+.card::before{
+    content: "sale %";
+    color: white;
+    position: absolute;
+    width: 59%;
+    height: 12%;
+    background-color: #dc3545;
+    padding: 0.1rem;
+    transform: rotate(38deg);
+    right: -46px;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.limited::after{
+    content: "limited";
+    color: white;
+    position: absolute;
+    width: 96%;
+    height: 7%;
+    background-color: #fdd114;
+    padding: 0.1rem;
+    transform: rotate(38deg);
+    right: -71px;
+    top: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-transform: capitalize;
+}
+.card-body{
+    padding:0;
+}
+ul{
+
+}
+.card-body .detalis{
+    border-radius: 0.8rem;
+}
+.slider{
+    min-height: 70vh;
+    overflow-x: hidden;
+}
+.slide{
+    background-size:cover ;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+}
+.slide:first-child{
+    left: -100%;
+}
+.slide:nth-child(even) {
+    left: 0%; 
+    background-image: url('https://www.hilton.com/im/en/PHLRIUA/15203239/phlri-el-techo-rooftop5.jpg?impolicy=crop&cw=5000&ch=3333&gravity=NorthWest&xposition=0&yposition=-1&rw=1280&rh=854');
+}
+.slide:last-child{
+    left: 100%;
+    background-image: url('https://www.hilton.com/im/en/REKCAPY/9458/rekcapy-canopy-central-01.jpg?impolicy=crop&cw=4800&ch=3200&gravity=NorthWest&xposition=0&yposition=-1&rw=1280&rh=854');
+}
+.slider::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.content {
+    z-index: 2;
+    left: 20%;
+    color: rgb(187, 187, 187);
+    width: fit-content;
+    max-width: 30rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    border: 1px solid rgb(147, 146, 146);
+    filter: blue(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content i{
+    font-weight: 900;
+    font-size: 6rem;
+}
+.content span{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.content h3{
+    max-width: 15rem;
+    text-transform: capitalize;
+}
+.flex{
+    display: flex;
+}
+.arrow{
+    font-size: 2rem;
+    top: 50%;
+    transform: translatey(-50%);
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+.arrow:focus{
+    border: 0;
+    outline: 0;
+}
+.arrow:nth-child(1){
+    left: 2%;
+}
+.arrow:nth-child(2){
+    right: 2%;
+}
